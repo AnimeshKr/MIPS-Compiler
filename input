@@ -1,0 +1,23 @@
+int increment(int a):
+	return a++;
+end
+
+int main():
+	bool c;
+	int a = 0;
+	c = true;
+	loop c == true:
+		if a<10:
+			echo a;
+			a = increment(a);
+		elseif a==10:
+			echo a*2;
+			a = a*2;
+		else:
+			a = increment(a);
+			echo a;
+			c = NOT c;	
+		end 
+	end 
+	return 0;
+end
